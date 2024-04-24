@@ -33,6 +33,10 @@ def rk4(t,f):
 
 x=rk4(u,f)
 t=tf(u)
+tval=3.5*10**6
+uval=tval/(tval+1)
+ind=np.amax(np.where(u<=uval))
+print(' Value of function at 3.5*10^6 is ',x[ind])
 plt.plot(t,x, label='f by RK4 Method')
 plt.xlabel('t')
 plt.ylabel('x')

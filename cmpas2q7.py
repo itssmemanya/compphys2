@@ -37,7 +37,7 @@ for i in range(10**5):
 xsol=sol(t)
 
 plt.plot(t,xsol, label='Analytical solution',linestyle=':',linewidth=4,color='black')
-plt.plot(t, y, label='Numerical Solution',color='red')
+plt.plot(t, y, label='Relaxation Method',color='red')
 plt.xlabel('t')
 plt.ylabel('y(t)')
 plt.legend()
